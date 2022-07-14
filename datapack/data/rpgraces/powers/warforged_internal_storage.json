@@ -1,0 +1,10 @@
+{
+  "type": "origins:inventory",
+  "name": "Warforged Internal Storage",
+  "description": "You have soulbound internal storage",
+  "drop_on_death": false,
+  "key": {
+    "key": "key.origins.secondary_active",
+    "continuous": false
+  }
+}

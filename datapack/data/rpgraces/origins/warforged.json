@@ -1,0 +1,28 @@
+{
+	"powers": [
+		 "rpgraces:warforged_resilience_effect_immune",
+		 "rpgraces:warforged_resilience_perfect_vision",
+		 "rpgraces:warforged_resilience_anaerobic",
+		 "rpgraces:warforged_internal_storage",
+		 "rpgraces:integrated_protection_armor",
+		 "rpgraces:integrated_protection_damageres",
+		 "rpgraces:integrated_protection_damage_immunity",
+		 "rpgraces:integrated_protection_lowdamagefallimmunity",
+		 "rpgraces:integrated_protection_slow_in_water",
+		 "rpgraces:warforged_scout_enhancedcrouchjump",
+		 "rpgraces:warforged_scout_enhancedsprintjump",
+		 "rpgraces:rain_slowness",
+		 "rpgraces:sentrys_rest",
+		 "rpgraces:fire_weakness",
+		 "rpgraces:electric_weakness",
+		 "rpgraces:magic_weakness",
+		 "rpgraces:climbing",
+		 "rpgraces:autosynthesis",
+		 "rpgraces:blaze"
+],
+	"icon": "minecraft:iron_chestplate",
+	"order": 11,
+	"impact": 3,
+	"name": "Warforged Scout",
+	"description": "Warforged are Sentient living constructs made of a blend organic and inorganic materials, built for a long forgotten war.  Warforged Scout's are a varient made for battlefield reconnaissance that have features that improve over-land mobility. They must now find a purpose beyond war."
+}

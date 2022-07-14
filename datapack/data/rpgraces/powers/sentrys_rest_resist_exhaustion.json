@@ -1,0 +1,9 @@
+{
+    "type": "origins:modify_exhaustion",
+    "modifier": {
+        "operation": "multiply_base",
+        "value": -0.50
+    },
+	"name": "Sentry's Rest",
+	"description": "As a Living Construct, you can run longer before getting exhausted"
+}

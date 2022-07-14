@@ -1,0 +1,18 @@
+{
+
+	"crouchjumpboost" : {
+		"type": "origins:modify_jump",
+		"modifier": {
+			"value": 0.8,
+			"operation": "addition"
+		},
+		"condition": {
+		"type": "origins:crouching"
+		}
+	},
+
+	"hidden":false
+}
+
+
+  

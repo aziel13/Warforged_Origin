@@ -1,0 +1,18 @@
+{
+	"sprintjumpboost" : {
+		"type": "origins:modify_jump",
+		"modifier": {
+			"value": 0.4,
+			"operation": "addition"
+		},
+		"condition": {
+		"type": "origins:sprinting"
+		}
+		
+	},
+
+	"hidden":false
+}
+
+
+  

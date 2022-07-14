@@ -1,0 +1,19 @@
+{
+	"type": "origins:invulnerability",
+	"damage_condition": {
+		"type": "origins:and",
+		"conditions": [
+				{
+					"type": "origins:name",
+					"name": "fall"	
+				},
+				{
+						"type": "origins:fall_distance",
+						"comparison": "<",
+						"compare_to": 5	
+				}
+				
+			]
+
+	}, "hidden" : false
+}

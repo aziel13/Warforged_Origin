@@ -1,0 +1,12 @@
+{
+  "type": "origins:modify_damage_taken",
+  "damage_condition": {
+    "type": "origins:fire"
+  },
+  "modifier": {
+    "operation": "multiply_base",
+    "value": 1.5
+  },
+  "name": "Flamable Components",
+  "description": "You take more damage from fire, magic, and lightning due to the composite materials that make up your body"
+}

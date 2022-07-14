@@ -1,0 +1,22 @@
+{
+	"type": "origins:modify_damage_taken",
+	"modifier": {
+		"operation": "addition",
+		"value": -5
+	},
+	"damage_condition": {
+	"type": "origins:and",
+	"conditions": [
+			{
+						"type": "origins:fall_distance",
+						"comparison": ">",
+						"compare_to": 5	
+				},	
+				{
+					"type": "origins:name",
+					"name": "fall"	
+				}
+		]
+	
+	}
+}

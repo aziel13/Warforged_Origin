@@ -1,0 +1,12 @@
+{
+  "type":"origins:multiple",
+  "regenerate_food":{
+     "type":"origins:action_over_time",
+     "interval":30,
+     "entity_action":{
+        "type":"origins:feed",
+        "food":1,
+        "saturation":1
+     }
+  }, "hidden" : true
+}
