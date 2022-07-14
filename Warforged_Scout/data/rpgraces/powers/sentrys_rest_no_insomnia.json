@@ -1,8 +1,0 @@
-{
-    "type": "origins:modify_insomnia_ticks",
-    "modifier": {
-        "operation": "multiply_base",
-        "value": -0.4
-    }
-
-}

@@ -1,12 +1,30 @@
 {
-
 	"type": "origins:modify_falling",
-	"velocity": 1.0,
+	"velocity": 0.8,
 	"take_fall_damage": false,
+
 	"condition": {
-		"type": "origins:fall_distance",
-		"comparison": "<=",
-		"compare_to": 8
+		"type": "origins:and",
+		"conditions": [
+			{
+				"type": "origins:on_block",
+				"inverted": true
+			},
+			{
+				"type": "origins:fall_distance",
+				"comparison": "<",
+				"compare_to": 8
+			},
+			{
+				"type": "origins:fall_distance",
+				"comparison": ">",
+				"compare_to": 0
+			},
+			{
+				"type": "origins:creative_flying",
+				"inverted": true
+			}
+		]
 	},
 
 	"hidden" : false
