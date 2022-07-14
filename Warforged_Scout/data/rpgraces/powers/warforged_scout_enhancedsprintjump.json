@@ -1,13 +1,34 @@
 {
+ "type": "multiple",
+
+	"upjumpwhensprinting": {
 
 		"type": "origins:modify_jump",
 		"modifier": {
-			"value": 0.6,
+			"value": 1,
 			"operation": "addition"
 		},
 		"condition": {
-		"type": "origins:sprinting"
+			"type": "origins:sprinting"
+		}
+
+	},
+	"increaseforwardvelocity": {
+		"type": "origins:active_self",
+		"entity_action": {
+			"type": "origins:add_velocity",
+			"space": "local",
+			"z": 1.0,
+			"y": 0.5
 		},
+		"condition": {
+			"type": "origins:sprinting"
+		},
+		"key":{
+			"key": "key.jump"
+		}
+	},
+
 
 
 	"hidden":false
