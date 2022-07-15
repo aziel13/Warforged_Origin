@@ -1,4 +1,6 @@
 {
+	"name": "protection layer - connective tissues",
+	"description": "your body's spungy connective tissues make for a effective shock absorber, reducing the amount of damage you take from falling",
 
 	"type": "origins:modify_damage_taken",
 	"modifier": {
@@ -8,9 +10,6 @@
 	"damage_condition": {
 		"type": "origins:name",
 		"name": "fall"
-	},
-	"hidden": false
-
-
+	}
 
 }

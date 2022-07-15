@@ -1,5 +1,8 @@
 {
-    "type": "origins:invulnerability",
+  "name": "protection layer - rough exterior",
+  "description": "your exterior is to rough to be harmed by thorny plants",
+
+  "type": "origins:invulnerability",
      "damage_condition": {
         "type": "origins:or",
         "conditions": [
@@ -12,6 +15,5 @@
                 "name": "cactus"
             }
         ]
-    },
-	"hidden":true
+    }
 }

@@ -1,0 +1,54 @@
+{
+	"type": "origins:multiple",
+	"name": "Warforged Scout Mobility Enhancer",
+	"description": "A Scouts's mobility enhancer increase their movement speed and gives them limited control of their personal gravity, allowing them to either increase the weight behind a swinging weapon or shift your center of gravity allowing them to run up walls",
+
+	"mode": {
+		"type": "origins:toggle",
+			"key": {
+				"key": "key.origins.primary_active",
+				"continuous": false
+			}
+	},
+	"changecenterofgravity": {
+		"type": "origins:climbing",
+		"hold_condition": {
+			"type": "origins:and",
+			"conditions":[
+				{
+					"type": "origins:power_active",
+					"power": "*:*_mode"
+				},
+				{
+					"type": "origins:collided_horizontally"
+				}
+		]
+		},
+		"condition": {
+
+			"type": "origins:and",
+			"conditions":[
+				{
+					"type": "origins:power_active",
+					"power": "*:*_mode"
+				},
+				{
+					"type": "origins:collided_horizontally"
+				}
+
+			]
+		}
+	},
+	"boosttoweaponswing": {
+		"type": "origins:modify_damage_dealt",
+		"modifier": {
+			"operation": "addition",
+			"value": 2
+		},
+		"condition": {
+			"type": "origins:power_active",
+			"power": "*:*_mode"
+			}
+	}
+
+}

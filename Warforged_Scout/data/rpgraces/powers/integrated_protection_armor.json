@@ -1,10 +1,46 @@
 {
-     "type": "origins:attribute",
-        "modifier": {
-            "attribute": "minecraft:generic.armor",
-            "operation": "addition",
-            "value": 4
-     },
-    "name": "Integrated Protection",
-    "description": "Your body has built-in defensive layers. You have built in armor, damage resistence, reduced fall damage, and can not be harmed by prickly plants"
+
+    "name": "Integrated Protection - polymorphic subdermal shell",
+    "description": "The polymorphic subdermal shell can harden to signficantly enhance defense at the expense of reduced mobility",
+
+  "type": "origins:multiple",
+
+  "switch": {
+    "type": "origins:toggle",
+    "key": {
+      "key": "key.pickItem",
+      "continuous": false
+    }
+  },
+  "hardenshell": {
+    "type": "origins:conditioned_attribute",
+    "modifier": {
+      "attribute": "minecraft:generic.armor",
+      "operation": "addition",
+      "value": 4
+    },
+    "tick_rate": 20,
+    "condition": {
+      "type": "origins:power_active",
+      "power": "*:*_switch"
+    }
+
+  },
+  "softenshell": {
+
+      "type": "origins:conditioned_attribute",
+      "modifier": {
+        "attribute": "minecraft:generic.movement_speed",
+        "value": 0.08,
+        "operation": "addition"
+      },
+    "tick_rate": 20,
+      "condition": {
+        "type": "origins:power_active",
+        "power": "*:*_switch"
+      }
+  }
+
+
+
 }
