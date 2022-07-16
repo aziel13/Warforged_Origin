@@ -1,0 +1,11 @@
+{
+    "type": "origins:effect_immunity",
+    "effects": [
+         "minecraft:poison",
+		"minecraft:blindness",
+		"minecraft:mining_fatigue",
+		"minecraft:nausea"
+    ],
+	"name": "Mycorrhiznth Fortitude",
+	"description": "Mycorrhiznth have remarkable fortitude for their size. They do not need to breath, their eyes work just as well on land as in water, and are usually resistent to most harmful effects with the exception of withering and direct damage affects"
+}

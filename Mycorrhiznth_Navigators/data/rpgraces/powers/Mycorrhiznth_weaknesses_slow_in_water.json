@@ -108,9 +108,6 @@
                                         "type": "origins:block_state",
                                         "property": "waterlogged",
                                         "value": true
-                                    },
-                                    {
-                                        "type": "origins:in_rain"
                                     }
                                 ]
                             }
@@ -174,9 +171,6 @@
                                         "type": "origins:block_state",
                                         "property": "waterlogged",
                                         "value": true
-                                    },
-                                    {
-                                        "type": "origins:in_rain"
                                     }
                                 ]
                             }
@@ -231,9 +225,6 @@
                                 "type": "origins:block_state",
                                 "property": "waterlogged",
                                 "value": true
-                            },
-                            {
-                                "type": "origins:in_rain"
                             }
                         ]
                     }
@@ -245,5 +236,5 @@
         }
     },
 	"name": "heavy when wet",
-	"description": "Since your made of metal and wood, you become heavier when wet as you absorb water"
+	"description": "Mycorrhiznth's Abalgemated Structures absorb water easily, resulting in them becomeing heavier when wet"
 }

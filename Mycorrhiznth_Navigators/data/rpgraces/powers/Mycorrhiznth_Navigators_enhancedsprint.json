@@ -1,0 +1,50 @@
+{
+	"type": "origins:active_self",
+	"entity_action": {
+		"type": "origins:and",
+		"actions": [
+			{
+				"type": "origins:add_velocity",
+				"z": 0.45,
+				"space": "local"
+			},
+			{
+				"type": "origins:add_velocity",
+				"z": 0.45,
+				"space": "local"
+			},
+			{
+				"type": "origins:add_velocity",
+				"y": 0.05,
+				"space": "local"
+			}
+		]
+	},
+	"condition": {
+		"type": "origins:and",
+		"conditions": [
+			{
+				"type": "origins:sprinting"
+			},
+			{
+				"type": "origins:on_block"
+			},
+			{
+				"type": "origins:creative_flying",
+				"inverted": true
+			},
+			{
+				"inverted": true,
+				"type": "origins:swimming"
+			}
+		]
+	},
+	"key": {
+		"key": "key.jump",
+		"continuous": false
+	},
+	"hidden":false
+}
+
+
+  

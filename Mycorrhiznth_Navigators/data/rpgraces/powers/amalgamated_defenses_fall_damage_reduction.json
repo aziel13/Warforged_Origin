@@ -1,0 +1,15 @@
+{
+	"name": "Amalgamated Defense - spungy connective tissues",
+	"description": "a Mycorrhiznth's body's spungy connective tissues make for a effective shock absorber, reducing the amount of damage they can take from falling",
+
+	"type": "origins:modify_damage_taken",
+	"modifier": {
+		"operation": "addition",
+		"value": -10
+	},
+	"damage_condition": {
+		"type": "origins:name",
+		"name": "fall"
+	}
+
+}

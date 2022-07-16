@@ -1,0 +1,319 @@
+{
+    "type": "origins:multiple",
+    "name": "Hellish Dehydration",
+    "description": "Mycorrhiznth bodies dehydrate in extreme heat condtions, causing them to move slower. Protective Equipement or Magics can help them resist or prevent this",
+
+    "overheating": {
+
+        "type": "origins:action_over_time",
+        "entity_action": {
+            "type": "origins:toggle",
+            "power": "*:*_homeostasis"
+        },
+        "interval": 20,
+        "condition": {
+
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:or",
+                    "conditions": [
+                        {
+                            "type": "origins:biome",
+                            "condition": {
+                                "type": "origins:temperature",
+                                "comparison": ">=",
+                                "compare_to": 2.0
+                            }
+                        },
+                        {
+                            "type": "origins:dimension",
+                            "dimension": "minecraft:the_nether"
+                        }
+                    ]
+                },
+                {
+                    "type": "origins:enchantment",
+                    "enchantment": "minecraft:fire_protection",
+                    "calculation": "sum",
+                    "comparison": "<",
+                    "compare_to": 2
+                },
+                {
+                    "type": "origins:status_effect",
+                    "effect": "minecraft:fire_resistance",
+                    "inverted": true
+                }
+            ]
+
+        }
+    },
+    "notoverheating": {
+
+        "type": "origins:action_over_time",
+        "entity_action": {
+            "type": "origins:toggle",
+            "power": "*:*_homeostasis"
+        },
+        "interval": 20,
+        "condition": {
+
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:or",
+                    "conditions": [
+                        {
+                            "type": "origins:biome",
+                            "condition": {
+                                "type": "origins:temperature",
+                                "comparison": "=>",
+                                "compare_to": 2.0
+                            }
+                        },
+                        {
+                            "type": "origins:dimension",
+                            "dimension": "minecraft:the_nether"
+                        }
+                    ]
+                },
+                {
+                    "type": "origins:enchantment",
+                    "enchantment": "minecraft:fire_protection",
+                    "calculation": "sum",
+                    "comparison": ">",
+                    "compare_to": 2
+                },
+                {
+                    "type": "origins:status_effect",
+                    "effect": "minecraft:fire_resistance"
+
+                }
+            ]
+
+        }
+    },
+    "no_fire_protection_conditioned_attribute": {
+        "type": "origins:conditioned_attribute",
+        "modifier": {
+            "name": "Slowness in high heat",
+            "attribute": "minecraft:generic.movement_speed",
+            "value": -0.2,
+            "operation": "multiply_total"
+        },
+        "tick_rate": 5,
+        "condition": {
+
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:or",
+                    "conditions": [
+                        {
+                            "type": "origins:biome",
+                            "condition": {
+                                "type": "origins:temperature",
+                                "comparison": ">=",
+                                "compare_to": 2.0
+                            }
+                        },
+                        {
+                            "type": "origins:dimension",
+                            "dimension": "minecraft:the_nether"
+                        }
+                    ]
+                },
+                {
+                    "type": "origins:enchantment",
+                    "enchantment": "minecraft:fire_protection",
+                    "calculation": "sum",
+                    "comparison": "==",
+                    "compare_to": 0
+                },
+                {
+                    "type": "origins:status_effect",
+                    "effect": "minecraft:fire_resistance",
+                    "inverted": true
+                }
+            ]
+
+        }
+    },
+
+    "no_fire_protection_status_effects": {
+
+        "type": "origins:stacking_status_effect",
+        "min_stacks": 22,
+        "max_stacks": 22,
+        "duration_per_stack": 5,
+        "effects": [
+            {
+                "effect": "minecraft:weakness",
+                "is_ambient": true,
+                "show_particles": false,
+                "show_icon": true,
+                "amplifier": 2
+            },
+            {
+                "effect": "minecraft:hunger",
+                "is_ambient": true,
+                "show_particles": false,
+                "show_icon": true,
+                "amplifier": 2
+            }
+        ],
+        "condition": {
+
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:or",
+                    "conditions": [
+                        {
+                            "type": "origins:biome",
+                            "condition": {
+                                "type": "origins:temperature",
+                                "comparison": ">=",
+                                "compare_to": 2.0
+                            }
+                        },
+                        {
+                            "type": "origins:dimension",
+                            "dimension": "minecraft:the_nether"
+                        }
+                    ]
+                },
+                {
+                    "type": "origins:enchantment",
+                    "enchantment": "minecraft:fire_protection",
+                    "calculation": "sum",
+                    "comparison": "==",
+                    "compare_to": 0
+                },
+                {
+                    "type": "origins:status_effect",
+                    "effect": "minecraft:fire_resistance",
+                    "inverted": true
+                }
+            ]
+
+        }
+
+    },
+    "fire_protection_1_conditioned_attribute": {
+        "type": "origins:conditioned_attribute",
+        "modifier": {
+            "name": "Slowness in high heat",
+            "attribute": "minecraft:generic.movement_speed",
+            "value": -0.1,
+            "operation": "multiply_total"
+        },
+        "tick_rate": 5,
+        "condition": {
+
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:or",
+                    "conditions": [
+                        {
+                            "type": "origins:biome",
+                            "condition": {
+                                "type": "origins:temperature",
+                                "comparison": ">=",
+                                "compare_to": 2.0
+                            }
+                        },
+                        {
+                            "type": "origins:dimension",
+                            "dimension": "minecraft:the_nether"
+                        }
+                    ]
+                },
+                {
+                    "type": "origins:enchantment",
+                    "enchantment": "minecraft:fire_protection",
+                    "calculation": "sum",
+                    "comparison": "==",
+                    "compare_to": 1
+                },
+                {
+                    "type": "origins:status_effect",
+                    "effect": "minecraft:fire_resistance",
+                    "inverted": true
+                }
+            ]
+
+        }
+    },
+    "fire_protection_1": {
+
+        "type": "origins:stacking_status_effect",
+        "min_stacks": 22,
+        "max_stacks": 22,
+        "duration_per_stack": 5,
+        "effects": [
+            {
+                "effect": "minecraft:weakness",
+                "is_ambient": true,
+                "show_particles": false,
+                "show_icon": true,
+                "amplifier": 1
+            },
+            {
+                "effect": "minecraft:hunger",
+                "is_ambient": true,
+                "show_particles": false,
+                "show_icon": true,
+                "amplifier": 1
+            }
+        ],
+        "condition": {
+
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:or",
+                    "conditions": [
+                        {
+                            "type": "origins:biome",
+                            "condition": {
+                                "type": "origins:temperature",
+                                "comparison": ">=",
+                                "compare_to": 2.0
+                            }
+                        },
+                        {
+                            "type": "origins:dimension",
+                            "dimension": "minecraft:the_nether"
+                        }
+                    ]
+                },
+                {
+                    "type": "origins:enchantment",
+                    "enchantment": "minecraft:fire_protection",
+                    "calculation": "sum",
+                    "comparison": "==",
+                    "compare_to": 1
+                },
+                {
+                    "type": "origins:status_effect",
+                    "effect": "minecraft:fire_resistance",
+                    "inverted": true
+                }
+            ]
+
+        }
+
+    },
+    "homeostasis": {
+
+        "type": "origins:effect_immunity",
+        "effects": [
+            "minecraft:weakness",
+            "minecraft:hunger"
+        ]
+
+    }
+
+}

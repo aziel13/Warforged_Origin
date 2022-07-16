@@ -1,0 +1,11 @@
+{
+  "type": "origins:inventory",
+  "container_type":"double_chest",
+  "name": "Mycorrhiznth Navigator's organel of hoarding",
+  "description": "Mycorrhiznth Navigator's have an organ for hoarding things that is larger on the inside than the outside",
+  "drop_on_death": false,
+  "key": {
+    "key": "key.saveToolbarActivator",
+    "continuous": false
+  }
+}

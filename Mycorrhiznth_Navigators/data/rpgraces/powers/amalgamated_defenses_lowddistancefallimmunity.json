@@ -1,6 +1,6 @@
 {
 	"type": "origins:modify_falling",
-	"velocity": 0.08,
+	"velocity": 0.06,
 	"take_fall_damage": false,
 
 	"condition": {
@@ -13,7 +13,7 @@
 			{
 				"type": "origins:fall_distance",
 				"comparison": "<",
-				"compare_to": 10
+				"compare_to": 15
 			},
 			{
 				"type": "origins:fall_distance",

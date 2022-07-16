@@ -1,7 +1,7 @@
 {
 	"type": "origins:multiple",
-	"name": "Warforged Scout Mobility Enhancer",
-	"description": "A Scouts's mobility enhancer increase their movement speed and gives them limited control of their personal gravity, allowing them to either increase the weight behind a swinging weapon or shift your center of gravity allowing them to run up walls",
+	"name": "Mycorrhiznth Navigators organel of gravitational rearangement",
+	"description": "Mycorrhiznth Navigators organel of gravitational rearangement gives them limited control of their personal direction of gravity, allowing them to either glide or walk up walls",
 
 	"mode": {
 		"type": "origins:toggle",
@@ -39,16 +39,15 @@
 			]
 		}
 	},
-	"boosttoweaponswing": {
-		"type": "origins:modify_damage_dealt",
-		"modifier": {
-			"operation": "addition",
-			"value": 2
-		},
+	"glidefield": {
+
+		"type": "origins:elytra_flight",
+		"render_elytra": true,
+		"texture_location": "minecraft:textures/entity/conduit/cage.png",
 		"condition": {
 			"type": "origins:power_active",
-			"power": "*:*_mode"
-			}
+			"power": " rpgraces:warforged_scout_mobility_enhancer_glidefield"
+		}
 	}
 
 }

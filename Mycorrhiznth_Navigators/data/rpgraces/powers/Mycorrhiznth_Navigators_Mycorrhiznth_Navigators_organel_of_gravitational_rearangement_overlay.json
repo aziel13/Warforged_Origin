@@ -1,0 +1,69 @@
+{
+	"type": "origins:multiple",
+	"centerofgravityoverlay": {
+
+		"type": "origins:overlay",
+		"texture": "minecraft:textures/block/command_block_front.png",
+		"red": 0.196,
+		"green": 0.804,
+		"blue": 0.196,
+		"strength": 0.7,
+		"draw_mode": "texture",
+		"draw_phase": "above_hud",
+		"visible_in_third_person": true,
+		"hide_with_hud": true,
+		"condition": {
+			"type": "origins:power_active",
+			"power": "*:warforged_scout_mobility_enhancer_changecenterofgravity"
+		}
+
+	},
+	"centerofgravityGlow": {
+		"type": "origins:self_glow",
+		"use_teams": false,
+		"red": 0.196,
+		"green": 0.804,
+		"blue": 0.196,
+		"condition": {
+			"type": "origins:power_active",
+			"power": "*:warforged_scout_mobility_enhancer_changecenterofgravity"
+		}
+	},
+	"glidefieldoverlay": {
+		"type": "origins:overlay",
+		"texture": "minecraft:textures/block/command_block_conditional.png",
+		"red": 0,
+		"green": 1,
+		"blue": 1,
+		"strength": 0.7,
+		"draw_mode": "texture",
+		"draw_phase": "above_hud",
+		"visible_in_third_person": true,
+		"hide_with_hud": true,
+		"condition": {
+			"type": "origins:power_active",
+			"power": " *:warforged_scout_mobility_enhancer_glidefield"
+		},
+
+		"type": "origins:self_glow",
+		"use_teams": false,
+		"red": 0,
+		"green": 1,
+		"blue": 1,
+		"condition": {
+			"type": "origins:in_rain"
+		}
+	},
+	"glidefieldGlow": {
+		"type": "origins:self_glow",
+		"use_teams": false,
+		"red": 0.56862745098,
+		"green": 0.89019607843,
+		"blue": 0.65098039215,
+		"condition": {
+			"type": "origins:power_active",
+			"power": " *:warforged_scout_mobility_enhancer_glidefield"
+		}
+	}, "hidden": true
+
+}

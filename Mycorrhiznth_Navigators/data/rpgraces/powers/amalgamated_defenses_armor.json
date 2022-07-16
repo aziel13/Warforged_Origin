@@ -1,6 +1,6 @@
 {
 
-    "name": "Integrated Protection - polymorphic subdermal shell",
+    "name": "Amalgamated Defense - polymorphic subdermal shell",
     "description": "The polymorphic subdermal shell can harden to signficantly enhance defense at the expense of reduced mobility",
 
   "type": "origins:multiple",
@@ -24,22 +24,37 @@
       "type": "origins:power_active",
       "power": "*:*_switch"
     }
-
   },
   "softenshell": {
 
-      "type": "origins:conditioned_attribute",
-      "modifier": {
-        "attribute": "minecraft:generic.movement_speed",
-        "value": 0.08,
-        "operation": "addition"
-      },
+    "type": "origins:conditioned_attribute",
+    "modifier": {
+      "attribute": "minecraft:generic.armor",
+      "operation": "addition",
+      "value": 8
+    },
     "tick_rate": 20,
-      "condition": {
-        "type": "origins:power_active",
-        "power": "*:*_switch"
-      }
+    "condition": {
+      "type": "origins:power_active",
+      "power": "*:*_switch"
+
+  },
+  "speedboost": {
+
+    "type": "origins:conditioned_attribute",
+    "modifier": {
+      "attribute": "minecraft:generic.movement_speed",
+      "value": 0.08,
+      "operation": "addition"
+    },
+    "tick_rate": 20,
+    "condition": {
+      "type": "origins:power_active",
+      "power": "*:*_softenshell"
+    }
   }
+
+
 
 
 

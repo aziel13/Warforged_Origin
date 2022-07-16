@@ -26,10 +26,16 @@
           "type": "origins:fire"
         },
         {
+          "type": "origins:hotFloor"
+        },
+        {
+          "type": "origins:lava"
+        },
+        {
           "type": "origins:magic"
         },
         {
-          "type": "origins:indirectMagic"
+          "type": "origins:indirectMagic.item"
         }
       ]
     },
@@ -38,7 +44,7 @@
       "value": 1.5
     }
   },
-  "name": "Composite Weakness",
-  "description": "You take more damage from fire, magic, and lightning due to the composite materials that make up your body"
+  "name": "mychrosynth Weakness",
+  "description": "Mycorrhiznth's take more damage from fire, magic, and lightning due to the amalgemation of materials that make up their bodies"
 
 }
