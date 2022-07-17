@@ -20,22 +20,28 @@
       "type": "origins:or",
       "conditions": [
         {
-          "type": "origins:lightningBolt"
+          "type": "origins:name",
+          "name": "lightningBolt"
         },
         {
-          "type": "origins:fire"
+          "type": "origins:name",
+          "name": "fire"
         },
         {
-          "type": "origins:hotFloor"
+          "type": "origins:name",
+          "name": "hotFloor"
         },
         {
-          "type": "origins:lava"
+          "type": "origins:name",
+          "name": "lava"
         },
         {
-          "type": "origins:magic"
+          "type": "origins:name",
+          "name":"magic"
         },
         {
-          "type": "origins:indirectMagic.item"
+          "type": "origins:name",
+          "name": "indirectMagic.item"
         }
       ]
     },

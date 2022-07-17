@@ -1,0 +1,12 @@
+{
+		"type": "origins:modify_jump",
+		"modifier": {
+			"operation": "addition",
+			"value": 0.2
+		},
+	"name": "",
+	"description": "a Mycorrhiznth legs act like springs, allowing them to jumping higher. when crouching or sprinting they can jump even higher"
+}
+
+
+  

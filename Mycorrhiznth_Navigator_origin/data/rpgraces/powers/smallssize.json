@@ -9,7 +9,7 @@
 			},
 			{
 				"type": "origins:execute_command",
-				"command": "scale set pehkui:width 0.75"
+				"command": "scale set pehkui:width 0.50"
 			},
 			{
 				"type": "origins:execute_command",
@@ -39,5 +39,5 @@
 		"command": "scale reset"
 	},
 	"name": "Thin and Short",
-	"description": "Mycorrhiznth Navigator's are slightly thinner and shorter than the metric steve."
+	"description": "Mycorrhiznth Navigator's are half as wioe and slightly shorter than the metric steve."
 }

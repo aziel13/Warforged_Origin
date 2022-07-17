@@ -92,12 +92,12 @@
           "material": "amethyst"
         }
       ]
-    }
+    },
+    "radius": 1,
+    "shape": "cube",
+    "comparison": "==",
+    "compare_to": 1
   },
-  "radius": 1,
-  "shape": "cube",
-  "comparison": ">=",
-  "compare_to": 1,
   "name": "Chemosynthesis",
   "description": "Mycorrhiznth's do not need to eat, as they can absorb inorganic and organic materials as through their lower limbs"
 }

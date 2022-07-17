@@ -1,0 +1,31 @@
+{
+	"powers": [
+		"rpgraces:armor",
+		"rpgraces:damageimmunity",
+		"rpgraces:damageres",
+		"rpgraces:slowddistancefallimmunity",
+		"rpgraces:amalgamateddefenses",
+		"rpgraces:flydamagereduction",
+		"rpgraces:chemosynthesis",
+		"rpgraces:anaerobic",
+		"rpgraces:effectimmune",
+		"rpgraces:perfectvision",
+		"rpgraces:organelofhoarding",
+		"rpgraces:endurance",
+		"rpgraces:enhancedcrouchjump",
+		"rpgraces:enhancedsprint",
+		"rpgraces:enhancedsprintjump",
+		"rpgraces:enhancedstandingjump",
+		"rpgraces:weaknesses",
+		"rpgraces:slowinwater",
+		"rpgraces:slowinheat",
+		"rpgraces:smallssize",
+		"rpgraces:speed"
+],
+	"icon": "minecraft:compass",
+	"order": 12,
+	"impact": 3,
+	"name": "Mycorrhiznth Navigator",
+	"description": "Mycorrhiznth are a race of constructs made of an amagemation of inorganic components and higher dimensional fungal colonies. They were created by an cursed-devine automoton creating automoton designed by a natorious mad god of bloody stupid creations. The Mycorrhiznth have only recently freed themselves from servitude in a war of independence after mellenia of servitude as weapons of war by otherworldy nature gods. Mycorrhiznth Navigators are a varient made for explore and scout in the endless wars accross countless dimensions. They have features that improve their survivability and mobility over-land at the cost of being susceptable to heat and over-hydration."
+
+}

@@ -1,0 +1,15 @@
+{
+    "type": "origins:conditioned_attribute",
+    "modifier": {
+      "attribute": "minecraft:generic.movement_speed",
+      "value": 0.08,
+      "operation": "addition"
+    },
+    "tick_rate": 20,
+    "condition": {
+      "type": "origins:power_active",
+      "power": "*:armor_hardenshell",
+      "inverted":  true
+    }, "hidden": true
+
+}

@@ -9,6 +9,6 @@
 		"type": "origins:name",
 		"name": "flyIntoWall"
 	},
-	"hidden": false
+	"hidden": true
 
 }
