@@ -1,6 +1,6 @@
 {
   "type": "origins:action_over_time",
-  "interval": 30,
+  "interval": 120,
   "entity_action": {
     "type": "origins:feed",
     "food": 1,
@@ -17,11 +17,31 @@
         },
         {
           "type": "origins:material",
-          "material": "nether_wood"
+          "material": "stone"
+        },
+        {
+          "type": "origins:material",
+          "material": "solid_organic"
+        },
+        {
+          "type": "origins:material",
+          "material": "moss_block"
         },
         {
           "type": "origins:material",
           "material": "cactus"
+        },
+        {
+          "type": "origins:material",
+          "material": "sponge"
+        },
+        {
+          "type": "origins:material",
+          "material": "soil"
+        },
+        {
+          "type": "origins:material",
+          "material": "nether_shoots"
         },
         {
           "type": "origins:material",
@@ -33,58 +53,6 @@
         },
         {
           "type": "origins:material",
-          "material": "underwater_plant"
-        },
-        {
-          "type": "origins:material",
-          "material": "replaceable_plant"
-        },
-        {
-          "type": "origins:material",
-          "material": "nether_shoots"
-        },
-        {
-          "type": "origins:material",
-          "material": "replaceable_underwater_plant"
-        },
-        {
-          "type": "origins:material",
-          "material": "organic_product"
-        },
-        {
-          "type": "origins:material",
-          "material": "soil"
-        },
-        {
-          "type": "origins:material",
-          "material": "solid_organic"
-        },
-        {
-          "type": "origins:material",
-          "material": "sponge"
-        },
-        {
-          "type": "origins:material",
-          "material": "leaves"
-        },
-        {
-          "type": "origins:material",
-          "material": "stone"
-        },
-        {
-          "type": "origins:material",
-          "material": "moss_block"
-        },
-        {
-          "type": "origins:material",
-          "material": "moss_block"
-        },
-        {
-          "type": "origins:material",
-          "material": "gourd"
-        },
-        {
-          "type": "origins:material",
           "material": "cake"
         },
         {
@@ -93,11 +61,11 @@
         }
       ]
     },
-    "radius": 1,
-    "shape": "cube",
-    "comparison": "==",
+    "radius": 2,
+    "shape": "sphere",
+    "comparison": ">=",
     "compare_to": 1
   },
   "name": "Chemosynthesis",
-  "description": "Mycorrhiznth's do not need to eat, as they can absorb inorganic and organic materials as through their lower limbs"
+  "description": "Mycorrhiznth's do not need to eat, as they can absorb inorganic and organic materials directly from their environment"
 }
